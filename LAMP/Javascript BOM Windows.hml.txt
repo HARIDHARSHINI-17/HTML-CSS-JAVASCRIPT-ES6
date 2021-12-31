@@ -1,0 +1,10 @@
+
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+function msg(){  
+ alert("WELCOME ASPIRE");  
+}  
+</script>  
+<input type="button" value="click" onclick="msg()"/>  

@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<style>
+#div1 {
+  width: 350px;
+  height: 80px;
+  padding: 40px;
+  border: 5px solid black;
+  background-color:rgb(36, 100, 197);
+}
+</style>
+<script>
+function allowDrop(event) {
+  event.preventDefault();
+}
+
+function drag(event) {
+  event.dataTransfer.setData("text", event.target.id);
+}
+
+function drop(event) {
+  event.preventDefault();
+  var data = event.dataTransfer.getData("text");
+  event.target.appendChild(document.getElementById(data));
+}
+</script>
+</head>
+<body>
+
+<p>Drag the W3Schools image into the rectangle:</p>
+
+<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<br>
+<img id="drag1" src="https://upload.wikimedia.org/wikipedia/commons/0/00/HTML5_logo_black.svg" draggable="true" ondragstart="drag(event)" width="336" height="69">
+
+<div1 class="container">  
+  <h2>Alerts</h2>  
+  <div1 class="alert alert-success">  
+    <strong>Success!</strong> This alert box indicates a successful or positive action.  
+  </div1>  
+
+</body>
+</html>

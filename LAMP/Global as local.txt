@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+function a(){
+window.value = 50;
+alert(window.value);
+}
+function b(){
+alert(window.value);
+}
+function c(){
+alert(window.value);
+}
+</script>
+</body>
+</html>

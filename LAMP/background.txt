@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script type="text/javascript" src="scripts.js">
+	</script>
+	<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+	<p>When the width of this window is 600 pixels or less, the background-color will be blue, if it's over 600 pixels, it'll
+		be light green.</p>
+body {
+    background-color: lightgreen;
+}
+
+@media only screen and (max-width: 900px) 
+body {
+        background-color: blue;
+    }
+}
+</body>
+</html>

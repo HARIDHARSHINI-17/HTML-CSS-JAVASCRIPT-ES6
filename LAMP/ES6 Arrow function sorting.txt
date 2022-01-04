@@ -1,0 +1,2 @@
+let marks=[100,70,35,50];
+var result = values.sort((a, b) => a - b);

@@ -1,0 +1,2 @@
+let marks = [100,90,80,70];
+console.log(Math.max(…values));

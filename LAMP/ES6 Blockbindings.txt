@@ -1,0 +1,9 @@
+var chocolates=[];
+for (let i = 0; i < 10; i++) {
+chocolates.push(function() {
+console.log(i);
+});
+}
+chocolates.forEach(function(count) {
+count(); // outputs 0, then 1, then 2, up to 9
+})

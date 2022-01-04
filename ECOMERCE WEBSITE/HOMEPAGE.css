@@ -1,0 +1,81 @@
+.Home{
+   /* background-image: url("https://media.istockphoto.com/photos/wooden-dark-background-picture-id1089321630?b=1&k=20&m=1089321630&s=170667a&w=0&h=MfC_6EN8RrQjHR6sdhfe96dnSuQEKxIGIjGXnVwFnho=");*/
+    height: max-content;
+    background-attachment: fixed;
+   /* background-position: center;*/
+    background-repeat: repeat;
+    background-size: 30%;
+}
+.page-title{
+    background: rgba(0,0,0,0.5);
+    text-align: top;
+    color: white;
+    padding: 20px;
+    font-variant:normal;
+    font-size: 50px;
+    font-family: italic;
+    letter-spacing: 5px;
+    background-image: url("https://media.istockphoto.com/photos/wooden-dark-background-picture-id1089321630?b=1&k=20&m=1089321630&s=170667a&w=0&h=MfC_6EN8RrQjHR6sdhfe96dnSuQEKxIGIjGXnVwFnho=");
+}
+#sticky{
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+.menu{
+    
+    text-align: right;
+}
+.menu-ul{
+    margin: 0;
+    padding: 10;
+    display: inline;
+}
+.menu-ul li{
+    font-size: 17px;
+    list-style: none;
+    display: inline-block;
+    padding: 25px 25px 26px 25px;
+}
+.a-menu{
+    text-decoration: none;
+    color:white;
+}
+.menu-ul li:hover{
+    background: #5b8c5a;
+    transform: scale(1.0);
+}
+div { position: center; }
+
+img {
+  position: absolute;
+  top: 15%; right: 10%;
+
+  z-index: 3;
+  animation: slideshow 10s linear 0s infinite;
+}
+
+img:nth-child(2) {
+  z-index: 2;
+  animation-delay: 4s;
+}
+
+img:nth-child(3) {
+  z-index: 1;
+  animation-delay: 8s;
+}
+
+@keyframes slideshow {
+   25% { opacity: 1;}
+   33.33% { opacity: 0;} 
+   91.66% { opacity: 0;}
+   100% { opacity: 0;}
+}
+body{
+    background-image: url("https://img.freepik.com/free-photo/rustic-white-wood-plank-background-vintage-style_1484-1311.jpg?size=626&ext=jpg");
+    color: coral;
+}
+.p{
+    display:  inline-block;
+    color:coral;
+}

@@ -1,0 +1,14 @@
+var x = 30;   
+var y = 50;    
+x = y;  
+console.log("After assignment the value of x is:  " + x);     
+x += y;   
+console.log("x+=y: " + x);     
+x -= y;   
+console.log("x-=y: " + x);     
+x *= y;   
+console.log("x*=y: " + x);     
+x /= y;   
+console.log("x/=y: " + x);   
+x %= y;   
+console.log("x%=y: " + x); 

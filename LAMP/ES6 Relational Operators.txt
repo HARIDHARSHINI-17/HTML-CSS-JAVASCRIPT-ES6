@@ -1,0 +1,16 @@
+var x = 20;
+var y = 10;
+console.log("Value of x: " + x);   
+console.log("Value of y: " + y);   
+var result = x > y;   
+console.log("x is greater than y: " + result);   
+result = x < y;   
+console.log("x is smaller than y: " + result);   
+result = x >= y;   
+console.log("x is greater than or equal to  y: " + result);   
+result = x <= y;   
+console.log("x is smaller than or equal to y: " + result);   
+result = x == y;   
+console.log("x is equal to y: " + result);   
+result = x != y;   
+console.log("x not equal to  y: " + result); 

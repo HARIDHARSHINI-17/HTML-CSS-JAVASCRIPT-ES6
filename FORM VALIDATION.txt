@@ -1,0 +1,63 @@
+                                                                               FORM VALIDATION
+
+Files Required:
+
+    HTML File - 1
+    CSS File - 1
+    JS File - 1
+
+Timeline:
+
+    One Week
+
+Fields:
+
+    First name:  ________________
+    Last name :  ________________
+    Email id  :  ________________
+    DOB       :  ________________
+
+Map:
+
+1)Create HTML file.
+2)Create External CSS file for styling the Form.
+3)Link the External CSS file to the HTML file.
+4)Create JS file for Validating the fiels using OOPS Concepts.
+
+Pseudocode:
+
+HTML File ==>
+   Create a html tag
+   Create a body tag
+   Create a form inside the body tag 
+   Create a div class for First name
+   Create a div class for Last name  
+   Create a div class for Email id
+   Create a div class for DOB
+  Link ==>
+    Link the External Css file using link tag and href attribute which saved as .css file.
+    Link the Javascript file using Script tag and src attribute which saved as .js file.
+  Button class ==>
+    Submit button
+ close the div tag
+ close the form tag
+ close the body tag
+ close the html tag
+
+CSS File ==>
+ style the html file using the different style attributes.
+ Then store it as .css file as external file and link it to the html file.
+
+JAVASCRIPT File ==>
+  JS is used to validate all the fields
+    ==>First name should contain only the alphabets.
+    ==>Last name should contain only the alphabets.
+    ==>Email id should be a valid one it done by using regex.
+    ==>Date of birth should not be in future.
+ These are the requirements that the field should be valid.
+ If the all the fields are valid then submit button will be enabled and we can complete our process of form validation.
+ The form validation in Javascript is done by using OOPS CONCEPTS such as class,objects,methods,etc..
+
+
+    
+    

@@ -1,0 +1,7 @@
+openfile method:
+
+var fs = require('fs');
+fs.open(demo.html,'w',function(err,file){
+if(err)throw err;
+console.log('opened')
+});

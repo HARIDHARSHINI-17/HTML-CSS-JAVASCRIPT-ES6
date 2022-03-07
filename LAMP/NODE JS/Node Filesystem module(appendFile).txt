@@ -1,0 +1,19 @@
+appendFile Method:
+First create one file:
+<!DOCTYPE html>
+<body>
+    <h1>WELCOME</h1>
+</body>
+</html>
+---Save this file as append.html---
+var fs = require('fs');
+fs.appendFile('append.html', 'Hello Dharshini', function (err) {
+  if (err) throw err;
+  console.log('APPENDED!');
+});
+---Save this file as appendFile.js---
+OUTPUT:
+while running html file the output is
+WELCOME
+Hello Dharshini
+---

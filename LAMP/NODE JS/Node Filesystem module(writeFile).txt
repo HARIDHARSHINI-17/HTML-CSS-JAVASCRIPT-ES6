@@ -1,0 +1,8 @@
+writeFile method:
+
+var fs = require('fs');
+//create a new  html file new.html
+fs.writeFile('new.html', 'Hello!', function (err) {
+  if (err) throw err;
+  console.log('Saved!');
+});

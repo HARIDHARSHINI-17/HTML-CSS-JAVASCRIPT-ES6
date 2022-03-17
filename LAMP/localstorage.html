@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <div id = "Storageexample"></div>
+        <script>
+        if(typeof(Storage) !== "undefined"){
+            localStorage.setItem("firstname","Hari");
+            document.getElementById("Storageexample").innerHTML = localStorage.getItem("firstname");
+        }else{
+            document.getElementById("Storageexample").innerHTML = "sorry ur browser not support with storage";
+        }
+        </script>
+    </body>
+</html>

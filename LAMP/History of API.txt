@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<body>
+<button onclick="myFunction()">Go Back 2 Pages</button>
+
+<script>
+function myFunction() {
+  window.history.go(-2);//window.history.go//window.history.back//window.history.forward//window.history.length;
+}
+</script>
+</body>
+</html>

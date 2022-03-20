@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <p>Here I presented sample example for geolocation</p>
+    <button onclick = "getLocation()">click here</button>
+    <p id = "geo"></p>
+    <script>
+        var x = document.getElementById("geo");
+        function getLocation(){
+            if(navigator.geolocation){
+               navigator.geolocation.getCurrentPosition(showPosition);
+            }else{
+                x.innerHTML = "Geolocation is not supported to the browser";
+            }
+        }
+        function showPosition(position){
+            x.innerHTML = "latitude: " + position.coords.latitude +
+           "<br> longitude: " + position.coords.longitude ;
+        }
+    </script>
+    </body>
+</html>

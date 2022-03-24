@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width" initial-scale="1.0">
+    <link rel="stylesheet" href="1Formvalidation.css">
+
+    <title>Create account</title>
+</head>
+<body>
+    <form id="form-validation"  method="POST">
+        <div class="title">
+            <h2>Form Validation</h2>
+        </div>
+
+        <!--Username-->
+
+        <div class="input-group">
+            <label for="username">Username</label>
+            <input type="text" id="username" placeholder="Enter the username" name="username" onblur="validateForm()">
+            <i class="fas fa-check-circle"></i><!--for success-->
+			<i class="fas fa-exclamation-circle"></i><!--for error-->
+            <p>Error message</p>
+        </div>
+        
+        <!--email-->
+
+        <div class="input-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Enter the email id" name="email">
+            <i class="fas fa-check-circle"></i><!--for success-->
+			<i class="fas fa-exclamation-circle"></i><!--for error-->
+            <p>Error message</p>
+        </div>
+        
+        <!--mobilenumber-->
+
+        <div class="input-group">
+            <label for="mobilenumber">Mobile Number</label>
+            <input type="mobilenumber" id="mobilenumber" placeholder="Enter the mobile number" name="mobilenumber">
+            <i class="fas fa-check-circle"></i><!--for success-->
+			<i class="fas fa-exclamation-circle"></i><!--for error-->
+            <p>Error message</p>
+        </div>
+        
+        <!--password-->
+
+        <div class="input-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="Enter the password" name="password">
+            <i class="fas fa-check-circle"></i><!--for success-->
+			<i class="fas fa-exclamation-circle"></i><!--for error-->
+            <p>Error message</p>
+        </div>
+        
+        <!--confirmpassword-->
+
+        <div class="input-group">
+            <label for="confirm-password">Confirm Password</label>
+            <input type="password" id="confirm-password" placeholder="Retype the password" name="confirmpassword">
+            <i class="fas fa-check-circle"></i><!--for success-->
+			<i class="fas fa-exclamation-circle"></i><!--for error-->
+            <p>Error message</p>
+        </div>
+
+        <button class="submit-button" type="submit">Submit</button>
+    </form>
+    
+    <script src="1Formvalidation.js"></script>
+</body>
+</html>

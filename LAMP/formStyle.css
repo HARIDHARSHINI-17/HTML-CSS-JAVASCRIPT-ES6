@@ -1,0 +1,80 @@
+
+.heading{
+	text-align: center;
+    font-size:x-large;
+}
+body{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-image: url("https://uaarch.com/web/wp-content/uploads/2020/11/ASPIRE-PH-1-RECEPTION2-21.09.2013.jpg");
+	background-size: cover;                
+	margin: auto;
+}
+#employee_Registration{
+	width: 400px;
+	padding: 20px;
+	text-transform: uppercase;
+	overflow: hidden;
+}
+.error {
+	color: red;
+	font-size: 14px;
+	margin-top: 6px;
+  }
+.title{
+	margin-bottom: 5px;  
+}
+.input-group{
+	margin: 2px 0; 
+	position: relative;
+}
+.input_group{
+    vertical-align: top;
+}
+.input-group label{
+	display: inline-block;
+	margin-bottom: 2px;  
+}
+.input-group input{
+	display: block;
+	width: 100%;
+	padding: 10px;
+}
+.success input{
+	border: 3px green solid;
+}
+.input-group i{
+	position: absolute;
+	right: 10px;
+	top: 35px;
+	visibility: hidden;
+}
+.error input{
+	border: 3px red solid;
+}
+/*.success i.fa-check-circle{
+	visibility: visible;
+	color: green;
+}
+.error i.fa-times-circle{
+	visibility: visible;
+	color: red;
+}*/
+.input-group p{
+	font-size: 15px;
+	color: red;
+	visibility: hidden;
+}
+.error p{
+	visibility: visible;
+}
+.btn{
+	width: 100%;
+	padding: 10px;
+	font-size: 20px;
+	background-color: violet;
+	color: white;
+	text-transform: uppercase;
+	border: none;
+}

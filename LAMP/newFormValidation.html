@@ -1,0 +1,51 @@
+<!--FORM CREATION-->
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="formStyle.css">
+</head>
+<body>
+	<form id="employee_Registration" method="GET">
+		<div class="title">
+			<h2 class="heading">EMPLOYEE REGISTRATION</h2>
+		</div>
+		<!--name-->
+		<div class="input-group">
+			<label for="username">Name</label>
+			<input type="text" id="username" placeholder="Type the Name" name="username" onblur="validateName()">
+			<p>Error Message</p>
+		</div>
+		<!--EMAIL-->
+		<div class="input-group">
+			<label for="email">Email</label>
+			<input type="email" id="email" placeholder="Type the Email Id" name="email" onblur="validateEmail()">
+			<p>Error Message</p>
+		</div>
+		<!--Phone Number-->
+		<div class="input-group">
+			<label for="phonenumber">Phone Number</label>
+			<input type="phonenumber" id="phonenumber" placeholder="Type your mobile number" name="phonenumber" onblur="validatePhone()">
+			<p>Error Message</p>
+		</div>
+		<!--Password-->
+		<div class="input-group">
+			<label for="password">Password</label>
+			<input type="password" id="password" placeholder="Type the Password" name="password" onblur="validatePassword()">
+			<p>Error Message</p>
+		</div>
+		<!--Confirm Password-->
+		<div class="input-group">
+			<label for="confirm-password">Confirm Password</label>
+			<input type="password" id="confirm-password" placeholder="Type the Confirm Password" name="confirmpassword" onblur="validateConfirmPassword()">
+			<p>Error Message</p>
+        </div>
+		<button type="submit" class="btn" onclick=submitform()>Submit</button>
+
+	</form>
+
+
+<script src="newformValidation.js"></script>
+</body>
+</html>

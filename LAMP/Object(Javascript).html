@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            <h4>OBJECT</h4>
+        </title>
+    </head>
+    <body>
+        <script>
+            emp = {id:101,name:"hari",salary:100};
+            document.write(emp.id,emp.name,emp.salary);
+            var emp1 = new Object();
+            emp1.id = 101;
+            emp1.name = 'Hari';
+            emp1.salary = 1000;
+            document.write(emp1.id,emp1.name,emp1.salary);
+            function emp2(id,name,salary){
+                this.id=id;
+                this.name=name;
+                this.salary=salary;
+                emp3 = new emp2(102,"hari",1000);
+                document.write(emp3.id,emp3.name,emp3.salary);
+            }
+        </script>
+    </body>
+</html>

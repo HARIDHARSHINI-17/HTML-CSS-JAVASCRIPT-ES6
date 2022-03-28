@@ -1,4 +1,3 @@
-
 .heading{
 	text-align: center;
     font-size:x-large;
@@ -17,19 +16,12 @@ body{
 	text-transform: uppercase;
 	overflow: hidden;
 }
-.error {
-	color: red;
-	font-size: 14px;
-	margin-top: 6px;
-  }
 .title{
 	margin-bottom: 5px;  
 }
 .input-group{
 	margin: 2px 0; 
 	position: relative;
-}
-.input_group{
     vertical-align: top;
 }
 .input-group label{
@@ -44,23 +36,10 @@ body{
 .success input{
 	border: 3px green solid;
 }
-.input-group i{
-	position: absolute;
-	right: 10px;
-	top: 35px;
-	visibility: hidden;
-}
+
 .error input{
 	border: 3px red solid;
 }
-/*.success i.fa-check-circle{
-	visibility: visible;
-	color: green;
-}
-.error i.fa-times-circle{
-	visibility: visible;
-	color: red;
-}*/
 .input-group p{
 	font-size: 15px;
 	color: red;

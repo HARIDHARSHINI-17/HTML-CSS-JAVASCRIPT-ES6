@@ -1,0 +1,40 @@
+<!--FORM CREATION-->
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width" initial-scale=1.0">
+	<link rel="stylesheet" href="formStyle.css">
+</head>
+<body>
+	<form id="employee_Registration" method="POST">
+		<div class="title">
+			<h2 class="heading">EMPLOYEE REGISTRATION</h2>
+		</div>
+		<!--name-->
+		<div class="input-group">
+			<label for="username">Name</label>
+			<input type="text" id="username" placeholder="Type the Name" name="username">
+			<p>Error Message</p>
+		<!--email-->
+			<label for="email">Email</label>
+			<input type="email" id="email" placeholder="Type the Email Id" name="email">
+			<p>Error Message</p>
+		<!--Phone Number-->
+			<label for="phonenumber">Phone Number</label>
+			<input type="phonenumber" id="phonenumber" placeholder="Type your mobile number" name="phonenumber">
+			<p>Error Message</p>
+		<!--Password-->
+			<label for="password">Password</label>
+			<input type="password" id="password" placeholder="Type the Password" name="password">
+			<p>Error Message</p>
+		<!--Confirm Password-->
+			<label for="confirm-password">Confirm Password</label>
+			<input type="password" id="confirm-password" placeholder="Type the Confirm Password" name="confirmpassword">
+			<p>Error Message</p>
+        </div>
+		<button type="submit" class="btn" onclick="validateForm()"></button>
+	</form>
+<script src="newformValidationss.js"></script>
+</body>
+</html>

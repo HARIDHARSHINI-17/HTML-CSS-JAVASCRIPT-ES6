@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+    let colors = new Set(['Green', 'Red', 'Orange', 'Yellow', 'Red']);  
+colors.add('Violet');  
+colors.add('Indigo');  
+colors.add('Blue');  
+colors.add('Violet');  
+console.log(colors.has('Indigo'));  
+console.log(colors.has('Violet'));  
+console.log(colors.has('Cyan'));  
+ let fruits = new Set(['mango','apple','mango','grapes','banana','apple']);
+ fruits.add('goa');
+ fruits.add('watermelon');
+ fruits.add('papaya');
+ var value = fruits.values();
+ console.log(value.next().value);
+ console.log(value.size());
+ set.delete("papaya");
+ console.log(set);
+ set.has("grapes");
+ console.log(set);
+
+ function fruits(values){
+     console.log(values);
+ }
+colors.forEach(fruits);//foreach calls the callback function for every entry.*/
+</script>
+</body>
+</html>
+
+     

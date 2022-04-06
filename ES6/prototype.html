@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <script>
+            function myclass(){
+                this.name = "hari";
+                this.age = 20;
+            }
+            myclass.prototype.grade = 'A';
+            var myclass2 = new myclass();
+            alert(myclass2.grade);
+            var myclass3 = new myclass();
+            alert(myclass3.grade);
+        </script>
+    </body>
+</html>

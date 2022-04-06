@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h2>Promise Example</h2>
+<p id="example"></p>
+<script>
+function toShow(text) {
+  document.getElementById("example").innerHTML = text;
+}
+let myPromise = new Promise(function(myResolve, myReject) {
+  let x = 500;
+  if (x == 100) {
+    myResolve("Success");
+  } else {
+    myReject("Error");
+  }
+});
+myPromise.then(
+  function(value) {
+    toShow(value);
+  },
+  function(error) {
+    toShow(error);
+  }
+);
+</script>
+
+</body>

@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <div>
+            <p>hai hari</p>
+            <p>hai keerthi</p>
+        </div>
+        <script>
+            let content = document.getElementsByTagName('p')[1].textContent;
+            document.getElementsByName('p')[0].textContent = document.getElementsByTagName('p')[1].textContent;
+            document.getElementsByTagName('p')[0].textContent = content;
+            document.write(content);
+            </script>
+    </body>
+</html>

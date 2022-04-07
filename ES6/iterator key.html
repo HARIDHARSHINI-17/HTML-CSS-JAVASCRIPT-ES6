@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<body>
+<script>
+
+let colors = [ "red", "green", "blue" ];
+let tracking = new Set([1234, 5678, 9012]);
+let data = new Map();
+
+data.set("topic", "Poem");
+data.set("format", "pdf");
+
+for (let key of colors.keys()) {
+    console.log(key);
+}
+
+for (let key of tracking.keys()) {
+    console.log(key);
+}
+
+for (let key of data.keys()) {
+    console.log(key);
+}
+
+</script>
+</body>
+</head>
+</html>

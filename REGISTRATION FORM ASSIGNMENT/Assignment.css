@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url("https://www.coreldraw.com/static/cdgs/images/pages/seo/tips/photo/basics/blur-background/blur-background.jpg");
+    background-position: center;
+    background-size: cover;
+}
+.container{
+    width: 440px;
+    height: 580px;
+    margin: 8% auto;
+    background: burlywood;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;/*450 px change hidden*/
+}
+ h3{
+    margin-bottom: 5px;
+    text-align: center;
+    color: #333;
+}
+.container form{
+    top: 50px;
+    left: 40px;
+    width: 350px;
+    position: absolute;
+}
+form input{
+    padding: 20px 10px;
+    margin: 5px 0;
+    border: 10%;
+    border-bottom: 1px solid #999;
+    width: 100%;
+    outline: none;
+    background: transparent;
+}
+input[type=radio]{ /*to allocate position*/
+    width: 10%;
+}
+input[type=checkbox]{
+    width: 5%;
+}
+
+form textarea{
+    padding: 10px 5px;
+    text-emphasis-color: black;
+    margin: 5px 0;
+    border: 0;
+    border-bottom: 1px solid #999;
+    width: 100%;
+    background: transparent;
+}
+.btn{
+    text-align: center;
+    width: 100%;
+    margin: 25px auto;
+}
+form button{
+    background-color: grey;
+    border-radius: 30px;
+    outline: none;
+    width: 110px;
+    height: 35px;
+    cursor: pointer;
+}
+
+#step2,#step3,#step4,#step5,#step6{
+    left: 450px;
+}
+
+
+h1{
+    text-align: center;
+}
+.message {
+    position: absolute;
+    bottom: auto;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+#mailerr,#fnameerr,#lnameerr,#pswerr,#cpswerr,#age,#phoneErr,#yopErr{
+    color: red;
+}
+

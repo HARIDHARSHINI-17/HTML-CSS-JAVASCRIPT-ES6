@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form</title>
+    <link rel="stylesheet" href="Assignment.css">
+</head>
+<body>
+    <div class="container">
+        <h1>REGISTRATION FORM</h1>
+        <form id="step1">
+            <h3>Basic</h3>
+            <p>EMAIL</p>
+            <input type="text" placeholder="Email Id" id="mail" onblur="validateEmail()"><div id="mailerror"></div>
+            <p>PASSWORD</p>
+            <input type="password" placeholder="Password" id="password" onblur="validatePsw()"><div id="pswerror"></div>
+            <p>CONFIRM PASSWORD</p>
+            <input type="password" placeholder="Confirm Password" id="confirmPassword" onblur="validateCpsw()"><div id="cpswerror"></div>
+            <p>FIRST NAME</p>
+            <input type="text" placeholder="First Name" id="fname" onblur="validateFname()"><div id="fnameerror"></div>
+            <p>LAST NAME</p>
+            <input type="text" placeholder="Last Name" id="lname" onblur="validateLname()"><div id="lnameerror"></div>
+            <div class="btn">
+                <button type="button" id="next1" onclick="Page1()">Next</button>
+            </div>
+        </form>
+        <form id="step2">
+            <h3>Others</h3>
+            <P>DATE OF BIRTH</P>
+            <input type="text" placeholder="DOB:dd/mm/yyyy" id="dob" onblur="validateAge()" required><div id="age"></div>
+            <label>Gender:</label>
+            <input type="radio" value="male" name="gender" checked>
+            <label for="male">Male</label>
+            <input type="radio" value="female" name="gender">
+            <label for="female">Female</label>
+            <P>ADDRESS</P>
+            <textarea placeholder="Address" rows="1"></textarea>
+            <P>STATE</P>
+            <label for="state">Choose your State:</label>
+            <input list="states" name="state" id="state" onblur="validateState()">
+            <datalist id="states">
+                <option value="Andhra Pradesh">
+                <option value="Arunachal Pradesh">
+                <option value="Assam">
+                <option value="Bihar">
+                <option value="Chattisgarh">
+                <option value="Goa">
+                <option value="Gujarat">
+                <option value="Haryana">
+                <option value="Himachal Pradesh">
+                <option value="Jharkhand">
+                    <option value="Karnataka">
+                    <option value="Kerala">
+                    <option value="Madhya Pradesh">
+                    <option value="Tamil Nadu">
+                    <option value="Telungana">
+                </datalist>
+                <p>MOBILENUMBER</p>
+            <input type="tel" placeholder="Mobile Number" id="phoneNo" onblur="validatePhoneNo()"><div id="phoneErr"></div>
+            <div class="btn">
+                <button type="button" id="back1">Back</button>
+                <button type="button" id="next2" onclick="Page2()">Next</button>
+            </div>
+        </form>
+        <form id="step3">
+            <h3>Work</h3><br>
+            <label>Occupation:</label>
+            <input type="radio" name="occupation" value="no" checked>
+            <label for="no">No</label>
+            <input type="radio" name="occupation" value="yes">
+            <label for="yes">Yes</label><br><br><br>
+            <P>EXPERIENCE</P>
+            <input type="text" placeholder="Overall years of experience">
+            <div class="btn">
+                <button type="button" id="back2">Back</button>
+                <button type="button" id="next3">Next</button>
+            </div>
+        </form>
+        <form id="step4">
+            <h3>Education</h3><br>
+            <label for="grade">Graduation:</label>
+            <input name="grade" id="grade" list="grades" onblur="validateGrade()">
+                <datalist id="grades">
+                    <option value="sslc">
+                    <option value="hsc">
+                    <option value="diplomo">
+                    <option value="be">
+                    <option value="btech">
+                    <option value="bsc">
+                    <option value="mba">
+                    <option value="ma">
+                </datalist>
+            <br><br><br>
+            <P>PASSED OUT YEAR</P>
+            <input type="text" id="passoutyr" placeholder="Year of passing:mm/yyyy" onblur="validatepassoutyr()"><div id="Err"></div>
+            <div class="btn">
+                <button type="button" id="back3">Back</button>
+                <button type="button" id="next4" onclick="Page3()">Next</button>
+            </div>
+        </form>
+        <form id="step5">
+            <h3>Team</h3><br>
+            <label for="dept">Department:</label>
+            <select name="dept" id="dept">
+                <option value="lamp">LAMP</option>
+                <option value=".net">.NET</option>
+                <option value="oracle">Oracle</option>
+            </select><br><br><br>
+            <input type="checkbox" id="check" name="check" value="check">
+            <label for="check"> The above information is true to my knowledge.</label>
+            <div class="btn">
+                <button type="button" id="back4">Back</button>
+                <button type="button" id="submit" onclick="Page4()">Submit</button>
+            </div>
+        </form>
+        <form id="step6">
+            <h2 class="message">Thank you for registering.Your response has been recorded.</h2>
+        </form>
+    </div>
+    <script src="Assignment script.js"></script>
+</body>
+
+</html>

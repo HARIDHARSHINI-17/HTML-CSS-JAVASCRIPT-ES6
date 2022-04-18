@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+ <body>
+    <link rel="stylesheet" href="sunday.css">
+<form id="regForm" action="">
+
+    <h1>REGISTRATION FORM</h1>
+    
+    <!-- One "tab" for each step in the form: -->
+    <div class="tab">STEP 1:
+      <p>FIRST NAME</p>
+      <input type ="text" id="firstname" placeholder="First name..." ></p>
+      <p3>Error message</p3>
+      <P>LAST NAME</P>
+      <p><input type = "text" placeholder="Last name..." ></p>
+      <P>EMAIL</P>
+      <p><input type = "email" id="email" placeholder="Email..." ></p>
+      <p>Error message</p>
+      <P>PASSWORD</P>
+      <p><input type = "password" id="password" placeholder="Password..."></p>
+      <p>Error message</p>
+      <P>CONFIRM-PASSWORD</P>
+      <p><input type = "confirm-Password" id="confirm-password" placeholder=" Confirm-Password..." ></p>
+      <p>Error message</p>
+    </div>
+    
+    <div class="tab">STEP 2:
+      <P>DATE OF BIRTH</P>
+      <p><input type = "date" placeholder ="DOB..." ></p>
+      <p>GENDER</p>
+      <input type="radio" id="male" name="Gender" value="MALE">
+        <label for="male">Male</label><br>
+        <input type="radio" id="female" name="Gender" value="FEMALE">
+        <label for="female">Female</label><br>
+      <P>ADDRESS</P>
+      <p><input type = "text" placeholder="Address..."></p>
+      <P>STATE</P>
+      <p><input type = "text" placeholder="State..."></p>
+      <P>MOBILENUMBER</P>
+      <p><input type = "number" id = "mobilenumber" placeholder="Mobilenumber..."></p>
+    </div>
+    
+    <div class="tab">STEP 3:
+      <P>OCCUPATION</P>
+      <p><input type = "text" placeholder="Occupation"></p>
+      <P>OVERALL EXPERIENCE</P>
+      <p><input type = "date" placeholder="Overall Years of Experience"></p>
+    </div>
+    
+    <div class="tab">STEP 4:
+
+      <label for ="Graduation">GRADUATION:</label>
+      <select name="Graduation" id="Degree" multiple>
+        <option value="SSLC">SSLC</option>
+        <option value="HSC">HSC</option>
+        <option value="UG">UG</option>
+      </select>
+      <p>YEAR OF PASSING</p>
+      <p><input type = "date" placeholder= "Year of Passing"></p>
+    </div>
+    
+    <div style="overflow:auto;">
+      <div style="float:right;">
+        <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
+        <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
+      </div>
+    </div>
+    
+    <!-- Circles which indicates the steps of the form: -->
+    <div style="text-align:center;margin-top:40px;">
+      <span class="step"></span>
+      <span class="step"></span>
+      <span class="step"></span>
+    </div>
+    
+    </form>
+    <script src = "emer.js"></script>
+ </body>
+</html>

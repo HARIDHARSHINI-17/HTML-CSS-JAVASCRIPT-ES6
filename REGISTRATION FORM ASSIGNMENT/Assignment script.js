@@ -205,7 +205,6 @@ function calculateAge() {
     else calculatedAge = today_year - birth_year - 1;
     return calculatedAge;
 }
-
 function validateState() {
     if (!getValue.value.length) {
         alert("Please choose your state");
@@ -314,18 +313,14 @@ function Page4(){
     
     if(checkBox.checked==false)
     {
-       // console.log("lasta1");
         alert("Please accept the terms and condition");
     }
     else{
         submit.onclick = function () {
-        console.log("lasta2");
-
             step5.style.left = "-450px";
             step6.style.left = "40px";
         }
     }
-
 }
 var back1 = document.getElementById("back1");
 var back2 = document.getElementById("back2");
@@ -336,12 +331,10 @@ back1.onclick = function () {
     step1.style.left = "40px";
     step2.style.left = "450px";
 }
-
 back2.onclick = function () {
     step2.style.left = "40px";
     step3.style.left = "450px";  
 }
-
 back3.onclick = function () {
     step3.style.left = "40px";
     step4.style.left = "450px";   
@@ -350,9 +343,7 @@ next3.onclick = function () {
     step3.style.left = "-450px";
     step4.style.left = "40px";
 }
-
 back4.onclick = function () {
     step4.style.left = "40px";
     step5.style.left = "450px";
-    progress.style.width = "288px";
 }

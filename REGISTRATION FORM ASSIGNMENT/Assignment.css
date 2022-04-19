@@ -68,6 +68,9 @@ form button{
 h1{
     text-align: center;
 }
+#step2,#step3,#step4,#step5,#step6{
+    left: 450px;
+}
 .message {
     position: absolute;
     bottom: auto;

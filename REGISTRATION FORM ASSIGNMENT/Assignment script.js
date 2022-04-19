@@ -55,7 +55,7 @@ function validateFname() {
 
         return false;
     }
-    else if (alphaFormat.test(fname.value) == false) { overflow: hidden;
+    else if (alphaFormat.test(fname.value) == false) {
         return false;
     }
     else if (fname.value.length < 2) {

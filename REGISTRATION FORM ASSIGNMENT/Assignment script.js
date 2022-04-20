@@ -261,7 +261,7 @@ var grade = document.getElementById('grade');
 var passoutyr = document.getElementById('passoutyr');
 var pageFourCheck1 = 0;
 var pageFourCheck2 = 0;
-var passoutyrFormat =  /^(0?[1-9]|[12][0-9]|3[01])[\/\-]\d{4}$/;
+var passoutyrFormat =  /^(0[1-9]|1[012])[\/\-](19[5-9]\d|20[0-3]\d|2040)$/;
 
 function validateGrade()
 {

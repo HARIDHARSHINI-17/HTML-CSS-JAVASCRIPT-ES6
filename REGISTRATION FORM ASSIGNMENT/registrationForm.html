@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form</title>
+    <link rel="stylesheet" href="registrationForm.css">
+</head>
+<body>
+    <div class="container">
+        <h1>REGISTRATION FORM</h1>
+        <form id="basic">
+            <h3>Basic</h3>
+            <p>EMAIL</p>
+            <input type="text" placeholder="Email Id" id="mail" onblur="validateEmail()"><div id="mail_error"></div>
+            <p>PASSWORD</p>
+            <input type="password" placeholder="Password" id="password" onblur="validatePassword()"><div id="password_error"></div>
+            <p>CONFIRM PASSWORD</p>
+            <input type="password" placeholder="Confirm Password" id="confirm_password" onblur="validateConfirmPassWord()"><div id="confirm_password_error"></div>
+            <p>FIRST NAME</p>
+            <input type="text" placeholder="First Name" id="first_name" onblur="validateFirstName()"><div id="firstname_error"></div>
+            <p>LAST NAME</p>
+            <input type="text" placeholder="Last Name" id="last_name" onblur="validateLastName()"><div id="lastname_error"></div>
+            <div class="btn">
+                <button type="button" id="others_btn" onclick="Page1()">Next</button>
+            </div>
+        </form>
+        <form id="others">
+            <h3>Others</h3>
+            <P>DATE OF BIRTH</P>
+            <input type="text" placeholder="DOB:dd/mm/yyyy" id="date_of_birth" onblur="validateAge()" required><div id="date_error"></div>
+            <label>Gender:</label>
+            <input type="radio" value="male" name="gender" checked>
+            <label for="male">Male</label>
+            <input type="radio" value="female" name="gender">
+            <label for="female">Female</label>
+            <P>ADDRESS</P>
+            <textarea placeholder="Address" rows="1"></textarea>
+            <P>STATE</P>
+            <label for="state">Choose your State:</label>
+            <input list="states" name="state" id="state" onblur="validateState()">
+            <datalist id="states">
+                <option value="Andhra Pradesh">
+                <option value="Arunachal Pradesh">
+                <option value="Assam">
+                <option value="Bihar">
+                <option value="Chattisgarh">
+                <option value="Goa">
+                <option value="Gujarat">
+                <option value="Haryana">
+                <option value="Himachal Pradesh">
+                <option value="Jharkhand">
+                    <option value="Karnataka">
+                    <option value="Kerala">
+                    <option value="Madhya Pradesh">
+                    <option value="Tamil Nadu">
+                    <option value="Telungana">
+                </datalist>
+                <p>MOBILENUMBER</p>
+            <input type="tel" placeholder="Mobile Number" id="phone_no" onblur="validatePhoneNo()"><div id="phone_error"></div>
+            <div class="btn">
+                <button type="button" id="back_basic_btn">Back</button>
+                <button type="button" id="work_btn" onclick="Page2()">Next</button>
+            </div>
+        </form>
+        <form id="work">
+            <h3>Work</h3><br>
+            <label>Occupation:</label>
+            <input type="radio" name="occupation" value="no" checked>
+            <label for="no">No</label>
+            <input type="radio" name="occupation" value="yes">
+            <label for="yes">Yes</label><br><br><br>
+            <P>EXPERIENCE</P>
+            <input type="text" placeholder="Overall years of experience">
+            <div class="btn">
+                <button type="button" id="back_other_btn">Back</button>
+                <button type="button" id="education_btn">Next</button>
+            </div>
+        </form>
+        <form id="education">
+            <h3>Education</h3><br>
+            <label for="grade">Graduation:</label>
+            <input name="grade" id="graduation" list="grades" onblur="validateGraduation()">
+                <datalist id="grades" multiple>
+                    <option value="sslc">
+                    <option value="hsc">
+                    <option value="diplomo">
+                    <option value="be">
+                    <option value="btech">
+                    <option value="bsc">
+                    <option value="mba">
+                    <option value="ma">
+                </datalist>
+            <br><br><br>
+            <P>PASSED OUT YEAR</P>
+            <input type="text" id="pass_out_year" placeholder="Year of passing:mm/yyyy" onblur="validatePassoutYear()"><div id="pass_error"></div>
+            <div class="btn">
+                <button type="button" id="back_work_btn">Back</button>
+                <button type="button" id="team_btn" onclick="Page3()">Next</button>
+            </div>
+        </form>
+        <form id="team">
+            <h3>Team</h3><br>
+            <label for="dept">Department:</label>
+            <select name="dept" id="department">
+                <option value="lamp">LAMP</option>
+                <option value=".net">.NET</option>
+                <option value="oracle">Oracle</option>
+            </select><br><br><br>
+            <input type="checkbox" id="check" name="check" value="check">
+            <label for="check"> The above information is true to my knowledge.</label>
+            <div class="btn">
+                <button type="button" id="back_education_btn">Back</button>
+                <button type="button" id="submit_btn" onclick="Page4()">Submit</button>
+            </div>
+        </form>
+        <form id="final_step">
+            <h2 class="message">Thank you for registering.Your response has been recorded.</h2>
+        </form>
+    </div>
+    <script src="registrationForm.js"></script>
+</body>
+
+</html>

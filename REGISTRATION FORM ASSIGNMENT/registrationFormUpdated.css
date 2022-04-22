@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: white;
+    background-position: center;
+    background-size: cover;
+}
+.container{
+  border-radius: 12px;
+    width: 450px;
+    height: 650px;
+    margin: 8% auto;
+    position: relative;
+    overflow: hidden; /*450 px change hidden*/
+}
+ h3{
+    margin-bottom: 5px;
+    text-align: center;
+    color: #333;
+}
+h2{
+    margin-left: 100px;
+}
+h1{
+    margin-left: auto;
+    text-align: center;
+}
+.container form{
+    top: 45px;
+    left: 40px;
+    width: 380px;
+    position: absolute;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+p{
+    text-transform: capitalize;
+}
+form input{
+    width: 100%;
+    padding: 5px 5px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+input[type=radio]{ /*to allocate position*/
+    width: 10%;
+}
+input[type=checkbox]{
+    width: 5%;
+}
+
+form textarea{
+    padding: 10px 5px;
+    text-emphasis-color: black;
+    margin: 5px 0;
+    border: 0;
+    border-bottom: 1px solid #999;
+    width: 100%;
+    background: transparent;
+}
+.btn{
+    text-align: center;
+    width: 100%;
+    margin: 25px auto;
+}
+form button{
+    background-color: grey;
+    border-radius: 30px;
+    outline: none;
+    width: 110px;
+    height: 35px;
+    cursor: pointer;
+}
+
+
+.message {
+    position: absolute;
+    bottom: auto;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+ #others,#work,#education,#team,#final_step{
+    left: 450px;
+}
+#mail_error,#firstname_error,#lastname_error,#password_error,#confirm_password_error,#date_error,#phone_error,#pass_error{
+    color: red;
+}
